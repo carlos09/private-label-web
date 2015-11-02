@@ -1,0 +1,213 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+   /* Large Devices, Wide Screens */
+   @media only screen and (max-width : 1200px) {
+     header .phones {
+       height: 580px;
+     }
+
+     section  {
+       h2.section-heading {
+         font-size: 38px;
+       }
+     }
+   }
+
+   /* Medium Devices, Desktops */
+   @media only screen and (max-width : 992px) {
+     header .intro-text  {
+       h1.heading {
+         font-size: 46px;
+       }
+
+       .phones {
+         height: 420px;
+       }
+     }
+
+     section h2.section-heading {
+       font-size: 40px;
+     }
+
+     #section1 {
+       padding-top: 20px;
+       padding-bottom: 175px;
+
+       &:before {
+         top: -62px;
+         height: 155px;
+       }
+
+       .section-heading {
+         width: 60%;
+       }
+
+       ul.icon-list li div.icon {
+         padding: 0;
+         margin: 5px 10px;
+       }
+
+       .phones {
+         left: 60px;
+         height: 600px;
+       }
+     }
+
+     #section2 {
+       padding-top: 20px;
+       padding-bottom: 175px;
+     }
+   }
+
+   /* Small Devices, Tablets */
+   @media only screen and (max-width : 768px) {
+     .navbar-default .navbar-brand img {
+       height: 50px;
+     }
+
+     #section2 {
+       padding-top: 20px;
+       padding-bottom: 175px;
+       margin-top: -43px;
+
+       &::before {
+         top: -75px;
+
+       }
+
+       .phoens {
+         height: 600px;
+         top: 0;
+       }
+     }
+   }
+
+   /* Extra Small Devices, Phones */
+   @media only screen and (max-width : 480px) {
+     header {
+       background-image: none;
+       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+       .intro-text{
+         padding-top: 100px;
+         padding-bottom: 50px;
+
+         h1.heading {
+           color: @st-orange;
+           font-size: 48px;
+           text-shadow: none;
+         }
+
+         h2.sub-heading {
+           color: @st-dark-text;
+           font-size: 23px;
+           text-shadow: none;
+         }
+
+         img.phones {
+           top: 50px;
+           height: 480px;
+            position: relative;
+            margin: 0 auto;
+            display: block;
+         }
+       }
+     }
+
+     section p.desc {
+       font-size: 23px;
+     }
+
+     #section1 {
+       margin-top: -50px;
+       padding-top: 40px;
+       padding-bottom: 600px;
+       background: rgb(255,255,255); /* Old browsers */
+       background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+       background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+       background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+       background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+       background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+       &:before {
+         background: #fff
+       }
+
+       h2.section-heading {
+          width: 100%;
+       }
+
+       img.phones {
+         top: 440px;
+         height: 675px;
+         left: 110px;
+       }
+
+       ul li {
+         font-size: 23px;
+       }
+     }
+
+     #section2 {
+       padding-bottom: 0px;
+       background: rgb(255,255,255); /* Old browsers */
+       background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+       background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+       background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+       background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+       background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+       &:before {
+         top: -62px;
+         height: 155px;
+         background: #fff;
+       }
+
+       img.phones {
+         display: block;
+         position: relative;
+         margin: 100px auto 0;
+         right: 0;
+       }
+       a.btn-style {
+         margin-top: 25px;
+         width: 100%;
+         display: block;
+         text-align: center;
+         padding: 15px 0;
+         font-size: 30px;
+         border-radius: 50px;
+       }
+     }
+
+     #section3 {
+       margin-top: -50px;
+       padding-top: 40px;
+       padding-bottom: 600px;
+       background: rgb(255,255,255); /* Old browsers */
+       background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+       background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+       background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+       background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+       background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+     }
+   }
+
+   /* Custom, iPhone Retina */
+   @media only screen and (max-width : 320px) {
+
+   }
