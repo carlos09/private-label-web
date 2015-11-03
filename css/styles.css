@@ -912,6 +912,89 @@ footer a.btn-style:hover {
     height: 300px;
     top: 178px;
   }
+  section h2.section-heading {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  section p.desc {
+    font-size: 14px;
+  }
+  section#section1 {
+    padding-bottom: 80px;
+  }
+  section#section1:before {
+    top: -50px;
+  }
+  section#section1 ul li {
+    font-size: 14px;
+  }
+  section#section1 ul.icon-list li:first-child .icon {
+    margin: 5px;
+  }
+  section#section1 ul.icon-list li div.icon {
+    padding: 0;
+  }
+  section#section1 ul.icon-list li span.title {
+    font-size: 12px;
+  }
+  section#section1 .col-sm-6.content {
+    float: right;
+    padding-left: 40px;
+  }
+  section#section1 .col-sm-6.img-screen {
+    left: 25px;
+  }
+  section#section1 .col-sm-6.img-screen img.phones {
+    height: 355px;
+  }
+  section#section2:before {
+    top: -50px;
+  }
+  section#section2 .col-sm-6.content {
+    float: left;
+    padding-right: 40px;
+  }
+  section#section2 .col-sm-6.img-screen {
+    float: right;
+  }
+  section#section2 .col-sm-6.img-screen img.phones {
+    height: 355px;
+    top: 35px;
+  }
+  section#section3 {
+    padding-top: 40px;
+    padding-bottom: 85px;
+  }
+  section#section3:before {
+    top: -50px;
+  }
+  section#section3 h2.section-heading {
+    padding-top: 30px;
+  }
+  section#section3 .col-sm-6.content {
+    float: right;
+    padding-left: 40px;
+  }
+  section#section3 .col-sm-6.img-screen {
+    left: 25px;
+  }
+  section#section3 .col-sm-6.img-screen img.phones {
+    height: 355px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  section h2.section-heading {
+    font-size: 32px;
+  }
+  section#section1 .phones {
+    top: 35px;
+  }
+  section#section1 ul.icon-list li div.icon {
+    margin: 5px;
+  }
+  section#section2 .col-sm-6.img-screen img.phones {
+    top: 65px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -936,7 +1019,7 @@ footer a.btn-style:hover {
     /* IE6-9 */
   }
   header .intro-text {
-    padding: 80px 0 100px;
+    padding: 80px 0 55px;
   }
   header .intro-text h1.heading {
     color: #ff3d00;
@@ -963,7 +1046,9 @@ footer a.btn-style:hover {
     font-size: 34px;
   }
   section#section1 {
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
     background-image: none;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
     background: #ffffff;
@@ -990,6 +1075,11 @@ footer a.btn-style:hover {
   section#section1 .col-sm-6.content {
     position: relative;
     top: -400px;
+    float: none;
+    padding-left: 15px;
+  }
+  section#section1 .col-sm-6.img-screen {
+    left: 0;
   }
   section#section1 ul.icon-list li div.icon {
     margin: 5px;
@@ -997,7 +1087,7 @@ footer a.btn-style:hover {
   }
   section#section1 .phones {
     position: relative;
-    top: 440px;
+    top: 265px;
     margin: 0 auto;
     display: block;
     height: 400px;
@@ -1027,10 +1117,24 @@ footer a.btn-style:hover {
     position: relative;
     display: block;
     margin: 0 auto;
-    max-width: 70%;
+    height: 360px;
+  }
+  section#section2 .col-sm-6.content {
+    position: relative;
+    top: 0px;
+    float: none;
+    padding-right: 15px;
+  }
+  section#section2 .col-sm-6.img-screen {
+    float: none;
+    left: 0;
+  }
+  section#section2 .col-sm-6.img-screen img.phones {
+    height: 360px;
+    top: 25px;
   }
   section#section3 {
-    padding-top: 0;
+    padding-top: 25px;
     padding-bottom: 0px;
     margin-bottom: 0;
     background-image: none;
@@ -1056,13 +1160,22 @@ footer a.btn-style:hover {
     background: #fff;
     height: 125px;
   }
+  section#section3 p.desc {
+    margin-bottom: 0;
+  }
   section#section3 .col-sm-6.content {
     position: relative;
     top: -400px;
+    float: none;
+    padding-left: 15px;
+  }
+  section#section3 .col-sm-6.img-screen {
+    float: none;
+    left: 0;
   }
   section#section3 .phones {
     position: relative;
-    top: 270px;
+    top: 185px;
     margin: 0 auto;
     display: block;
     height: 400px;
@@ -1071,15 +1184,31 @@ footer a.btn-style:hover {
     padding: 35px 0 55px;
   }
 }
+@media only screen and (max-width: 380px) {
+  section#section1 .phones {
+    top: 290px;
+  }
+}
+@media only screen and (max-width: 358px) {
+  section#section1 .phones {
+    top: 320px;
+  }
+}
 @media only screen and (max-width: 335px) {
+  header .intro-text h2.sub-heading {
+    font-size: 18px;
+  }
   section h2.section-heading {
     font-size: 30px !important;
   }
   section#section1 {
-    padding-bottom: 60px;
+    padding-bottom: 5px;
   }
   section#section1 ul.icon-list li {
     display: block;
+  }
+  section#section1 ul.icon-list li:first-child {
+    margin-left: 5px;
   }
   section#section1 ul.icon-list li:first-child .icon {
     margin-left: 5px;
@@ -1094,13 +1223,18 @@ footer a.btn-style:hover {
     font-size: 18px;
   }
   section#section1 .phones {
-    top: 610px;
+    top: 450px;
   }
   section#section2 .phones {
     max-width: 80%;
   }
   section#section3 .phones {
-    top: 345px;
+    top: 210px;
   }
 }
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 323px) {
+  section#section1 .phones {
+    top: 510px;
+  }
+}

@@ -105,6 +105,137 @@
           top: 178px;
         }
       }
+
+      section {
+        h2.section-heading {
+          font-size: 38px;
+          margin-bottom: 10px;
+        }
+
+        p.desc {
+          font-size: 14px;
+        }
+
+        &#section1 {
+          padding-bottom: 80px;
+
+          &:before {
+            top: -50px;
+          }
+
+          ul {
+            li {
+              font-size: 14px;
+            }
+
+            &.icon-list {
+              li {
+
+                &:first-child {
+                  .icon {
+                    margin: 5px;
+                  }
+                }
+
+                div.icon {
+                  padding: 0;
+                }
+
+                span.title {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+
+          .col-sm-6 {
+            &.content {
+              float: right;
+              padding-left: 40px
+            }
+
+            &.img-screen {
+              left: 25px;
+
+              img.phones {
+                height: 355px;
+              }
+            }
+          }
+        }
+
+        &#section2 {
+
+          &:before {
+            top: -50px;
+          }
+
+          .col-sm-6 {
+            &.content {
+              float: left;
+              padding-right: 40px;
+            }
+
+            &.img-screen {
+              float: right;
+
+              img.phones {
+                height: 355px;
+                top: 35px;
+              }
+            }
+          }
+        }
+
+        &#section3 {
+          padding-top: 40px;
+          padding-bottom: 85px;
+
+          &:before {
+            top: -50px;
+          }
+
+          h2.section-heading {
+            padding-top: 30px;
+          }
+
+          .col-sm-6 {
+            &.content {
+              float: right;
+              padding-left: 40px;
+            }
+
+            &.img-screen {
+              left: 25px;
+
+              img.phones {
+                height: 355px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width : 640px) {
+      section {
+
+        h2.section-heading {
+          font-size: 32px;
+        }
+
+        &#section1 .phones {
+          top: 35px;
+        }
+
+        &#section1 ul.icon-list li div.icon {
+          margin: 5px;
+        }
+
+        &#section2 .col-sm-6.img-screen img.phones {
+          top: 65px;
+        }
+      }
     }
 
     /* Extra Small Devices, Phones */
@@ -123,7 +254,7 @@
 
 
         .intro-text {
-          padding: 80px 0 100px;
+          padding: 80px 0 55px;
 
           h1.heading {
             color: @st-orange;
@@ -161,7 +292,9 @@
         }
 
         &#section1 {
-          padding-bottom: 100px;
+          padding-top: 50px;
+          padding-bottom: 0px;
+          margin-bottom: 0;
           background-image: none;
          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
           background: rgb(255,255,255); /* Old browsers */
@@ -182,10 +315,12 @@
             &.content {
               position: relative;
               top: -400px;
+              float: none;
+              padding-left: 15px;
             }
 
             &.img-screen {
-
+              left: 0;
             }
           }
 
@@ -196,7 +331,7 @@
 
           .phones {
             position: relative;
-            top: 440px;
+            top: 265px;
             margin: 0 auto;
             display: block;
             height: 400px;
@@ -220,12 +355,31 @@
             position: relative;
             display: block;
             margin: 0 auto;
-            max-width: 70%;
+            height: 360px;
+          }
+
+          .col-sm-6 {
+            &.content {
+              position: relative;
+              top: 0px;
+              float: none;
+              padding-right: 15px;
+            }
+
+            &.img-screen {
+              float: none;
+              left: 0;
+
+              img.phones {
+                height: 360px;
+                top: 25px;
+              }
+            }
           }
         }
 
         &#section3 {
-          padding-top:0;
+          padding-top: 25px;
           padding-bottom: 0px;
           margin-bottom: 0;
           background-image: none;
@@ -244,20 +398,27 @@
             height: 125px;
           }
 
+          p.desc {
+            margin-bottom: 0;
+          }
+
           .col-sm-6 {
             &.content {
               position: relative;
               top: -400px;
+              float: none;
+              padding-left: 15px;
             }
 
             &.img-screen {
-
+              float: none;
+              left: 0;
             }
           }
 
           .phones {
             position: relative;
-            top: 270px;
+            top: 185px;
             margin: 0 auto;
             display: block;
             height: 400px;
@@ -270,19 +431,36 @@
       }
     }
 
+    @media only screen and (max-width : 380px) {
+      section#section1 .phones {
+        top: 290px;
+      }
+    }
+
+    @media only screen and (max-width : 358px) {
+      section#section1 .phones {
+        top: 320px;
+      }
+    }
+
     @media only screen and (max-width : 335px) {
+      header .intro-text h2.sub-heading {
+        font-size: 18px;
+      }
+
       section {
         h2.section-heading {
           font-size: 30px !important;
         }
 
         &#section1 {
-          padding-bottom: 60px;
+          padding-bottom: 5px;
 
           ul.icon-list li {
             display: block;
 
             &:first-child {
+              margin-left: 5px;
               .icon {
                 margin-left: 5px;
               }
@@ -301,7 +479,7 @@
           }
 
           .phones {
-            top: 610px;
+            top: 450px;
           }
         }
 
@@ -313,351 +491,17 @@
 
         &#section3 {
           .phones {
-            top: 345px;
+            top: 210px;
           }
         }
       }
     }
 
     /* Custom, iPhone Retina */
-    @media only screen and (max-width : 320px) {
-
+    @media only screen and (max-width : 323px) {
+      section {
+        &#section1 .phones {
+          top: 510px;
+        }
+      }
     }
-
-
-
-//
-//    /* Large Devices, Wide Screens */
-//    @media only screen and (max-width : 1200px) {
-//      header {
-//        .phones {
-//          height: 433px;
-//         top: 120px;
-//         right: -20px;
-//       }
-//
-//       .intro-text{
-//         img.mobile-store {
-//           height: 40px;
-//         }
-//       }
-//      }
-//
-//      section  {
-//        h2.section-heading {
-//          font-size: 38px;
-//        }
-//
-//        &#section2 .phones {
-//          top: 10px;
-//        }
-//      }
-//
-//
-//           footer {
-//             &:before {
-//               height: 71px;
-//             }
-//           }
-//    }
-//
-//    /* Medium Devices, Desktops */
-//    @media only screen and (max-width : 992px) {
-//      header .intro-text  {
-//        h1.heading {
-//          font-size: 46px;
-//        }
-//
-//        .phones {
-//          height: 420px;
-//        }
-//      }
-//
-//      section h2.section-heading {
-//        font-size: 40px;
-//      }
-//
-//      #section1 {
-//        padding-top: 20px;
-//        padding-bottom: 175px;
-//
-//        &:before {
-//          top: -62px;
-//          height: 155px;
-//        }
-//
-//        .col-sm-6 {
-//
-//          &.content {
-//            width: 66.66666667%;
-//          }
-//
-//          &.img-screen {
-//            width: 33.33333333%;
-//          }
-//        }
-//
-//        .section-heading {
-//          width: 60%;
-//        }
-//
-//        ul.icon-list li div.icon {
-//          padding: 0;
-//          margin: 5px 10px;
-//        }
-//
-//        .phones {
-//          left: 20px;
-//          height: 400px;
-//        }
-//      }
-//
-//      #section2 {
-//        padding-top: 20px;
-//        padding-bottom: 175px;
-//      }
-//    }
-//
-//    /* Small Devices, Tablets */
-//    @media only screen and (max-width : 768px) {
-//      .navbar-default .navbar-brand img {
-//        height: 50px;
-//      }
-//
-//      #section2 {
-//        padding-top: 20px;
-//        padding-bottom: 175px;
-//        margin-top: -43px;
-//
-//        &::before {
-//          top: -75px;
-//
-//        }
-//
-//        .col-sm-6 {
-//
-//          &.content {
-//            width: 50%;
-//          }
-//
-//          &.img-screen {
-//            width: 50%;
-//          }
-//        }
-//
-//        .phones {
-//          right: 20px;
-//          top: 0px;
-//          height: 400px;
-//        }
-//      }
-//
-//      #section3 {
-//        padding-top: 20px;
-//
-//        .col-sm-6 {
-//
-//          &.content {
-//            width: 66.66666667%;
-//          }
-//
-//          &.img-screen {
-//            width: 33.33333333%;
-//          }
-//        }
-//
-//        .phones {
-//          left: 20px;
-//           top: 0;
-//           height: 400px;
-//        }
-//      }
-//    }
-//
-//    /* Extra Small Devices, Phones */
-//    @media only screen and (max-width : 480px) {
-//      header {
-//        background-image: none;
-//        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
-//         background: rgb(255,255,255); /* Old browsers */
-//         background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
-//         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
-//         background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
-//         background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
-//         background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
-//         background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
-//         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
-//
-//        .intro-text{
-//          padding-top: 65px;
-//          padding-bottom: 50px;
-//
-//          h1.heading {
-//            color: @st-orange;
-//            font-size: 32px;
-//            text-shadow: none;
-//          }
-//
-//          h2.sub-heading {
-//            color: @st-dark-text;
-//            font-size: 18px;
-//            text-shadow: none;
-//          }
-//
-//          img.phones {
-//            top: 50px;
-//            height: auto;
-//            max-width: 100%;
-//             position: relative;
-//             margin: 0 auto;
-//             display: block;
-//             right: 0;
-//          }
-//
-//          img.mobile-store {
-//            height: 36px;
-//          }
-//        }
-//      }
-//
-//      section {
-//        .col-sm-6.content,
-//        .col-sm-6.img-screen {
-//          width: 100% !important;
-//        }
-//        p.desc {
-//          font-size: 18px;
-//         }
-//
-//       h2.section-heading {
-//         font-size: 32px;
-//       }
-//      }
-//
-//      #section1 {
-//        margin-top: -50px;
-//        padding-top: 32px;
-//        padding-bottom: 100px;
-//        background: rgb(255,255,255); /* Old browsers */
-//        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
-//        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
-//        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
-//        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
-//        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
-//        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
-//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
-//
-//        &:before {
-//          background: #fff
-//        }
-//
-//        h2.section-heading {
-//           width: 100%;
-//        }
-//
-//        .col-sm-6 {
-//          &.content {
-//            position: relative;
-//            top: -400px;
-//          }
-//          &.img-screen {
-//            display: block;
-//             margin: 0 auto;
-//             position: relative;
-//             top: 450px;
-//
-//             .phones {
-//               left: 0;
-//               height: 400px;
-//               position: relative;
-//               margin: 0 auto;
-//               display: block;
-//             }
-//          }
-//         }
-//
-//        ul li {
-//          font-size: 18px;
-//        }
-//      }
-//
-//      #section2 {
-//        padding-bottom: 0px;
-//        background: rgb(255,255,255); /* Old browsers */
-//        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
-//        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
-//        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
-//        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
-//        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
-//        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
-//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
-//
-//        &:before {
-//          top: -62px;
-//          height: 155px;
-//          background: #fff;
-//        }
-//
-//        img.phones {
-//          display: block;
-//          position: relative;
-//          margin: 60px auto 0;
-//          right: 0;
-//        }
-//        a.btn-style {
-//          margin-top: 25px;
-//          width: 100%;
-//          display: block;
-//          text-align: center;
-//          padding: 15px 0;
-//          font-size: 30px;
-//          border-radius: 50px;
-//        }
-//      }
-//
-//      #section3 {
-//        margin-top: 0px;
-//        padding-top: 20px;
-//        padding-bottom: 10px;
-//        background: rgb(255,255,255); /* Old browsers */
-//        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
-//        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
-//        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
-//        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
-//        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
-//        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
-//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
-//
-//        &:before {
-//          top: -62px;
-//          height: 155px;
-//          background: #fff;
-//        }
-//
-//        .col-sm-6 {
-//          &.content {
-//            position: relative;
-//            top: -400px;
-//          }
-//          &.img-screen {
-//            display: block;
-//             margin: 0 auto;
-//             position: relative;
-//             top: 300px;
-//
-//             .phones {
-//               left: 0;
-//               height: 400px;
-//               position: relative;
-//               margin: 0 auto;
-//               display: block;
-//             }
-//          }
-//         }
-//      }
-//    }
-//
-//    /* Custom, iPhone Retina */
-//    @media only screen and (max-width : 320px) {
-//
-//    }
