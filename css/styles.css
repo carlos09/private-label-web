@@ -905,13 +905,13 @@ footer a.btn-style:hover {
   nav {
     padding-bottom: 0;
   }
-  nav .navbar-default {
+  .navbar-default {
     background-color: #fff;
   }
-  nav .navbar-default .navbar-brand img {
+  .navbar-default .navbar-brand img {
     height: 50px;
   }
-  nav .navbar-default .nav li a.btn-style {
+  .navbar-default .nav li a.btn-style {
     background-color: transparent !important;
     color: #ff3d00 !important;
     box-shadow: none;
