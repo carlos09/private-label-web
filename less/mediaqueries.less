@@ -97,19 +97,28 @@
 
       .navbar-default {
         background-color: #fff;
-        
+        padding-bottom: 0;
+
+        .navbar-header {
+          margin-bottom: 5px;
+        }
+
         .navbar-brand img {
           height: 50px;
         }
 
-        .nav li a.btn-style {
-          background-color: transparent !important;
-          color: @st-orange !important;
-          box-shadow: none;
-          border-radius: 0;
-          border-bottom: 1px solid #e7e7e7;
-          width: auto;
-          padding: 10px 0;
+        .nav {
+          margin-bottom: 0;
+
+           li a.btn-style {
+            background-color: transparent !important;
+            color: @st-orange !important;
+            box-shadow: none;
+            border-radius: 0;
+            border-bottom: 1px solid #e7e7e7;
+            width: auto;
+            padding: 10px 0;
+          }
         }
       }
 
