@@ -883,6 +883,10 @@ footer a.btn-style:hover {
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  header .intro-text .phones {
+    height: 300px;
+    top: 280px;
+  }
   section .col-sm-6.content {
     width: 66.66666667%;
   }
