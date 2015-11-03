@@ -883,7 +883,7 @@ footer a.btn-style:hover {
   }
   #section1 .phones {
     left: 20px;
-    height: 600px;
+    height: 400px;
   }
   #section2 {
     padding-top: 20px;
@@ -912,7 +912,7 @@ footer a.btn-style:hover {
   #section2 .phones {
     right: 20px;
     top: 0px;
-    height: 585px;
+    height: 400px;
   }
   #section3 {
     padding-top: 20px;
@@ -988,7 +988,7 @@ footer a.btn-style:hover {
   #section1 {
     margin-top: -50px;
     padding-top: 32px;
-    padding-bottom: 600px;
+    padding-bottom: 500px;
     background: #ffffff;
     /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
@@ -1013,8 +1013,7 @@ footer a.btn-style:hover {
     width: 100%;
   }
   #section1 img.phones {
-    top: 440px;
-    height: 675px;
+    top: 402px;
     left: 110px;
   }
   #section1 ul li {
@@ -1047,7 +1046,7 @@ footer a.btn-style:hover {
   #section2 img.phones {
     display: block;
     position: relative;
-    margin: 100px auto 0;
+    margin: 60px auto 0;
     right: 0;
   }
   #section2 a.btn-style {
@@ -1060,9 +1059,9 @@ footer a.btn-style:hover {
     border-radius: 50px;
   }
   #section3 {
-    margin-top: -50px;
+    margin-top: 0px;
     padding-top: 40px;
-    padding-bottom: 600px;
+    padding-bottom: 388px;
     background: #ffffff;
     /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
@@ -1079,6 +1078,15 @@ footer a.btn-style:hover {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
     /* IE6-9 */
+  }
+  #section3:before {
+    top: -62px;
+    height: 155px;
+    background: #fff;
+  }
+  #section3 img.phones {
+    top: 250px;
+    left: 110px;
   }
 }
 /* Custom, iPhone Retina */
