@@ -311,9 +311,9 @@ header {
   color: white;
 }
 header .phones {
-  height: 650px;
+  height: 470px;
   right: 0;
-  top: -50px;
+  top: 10px;
 }
 header .intro-text {
   padding-top: 100px;
@@ -574,7 +574,6 @@ footer ul.quicklinks {
 }
 .phones {
   position: absolute;
-  height: 650px;
 }
 ::-moz-selection {
   text-shadow: none;
@@ -884,7 +883,7 @@ footer a.btn-style:hover {
   }
   #section1 .phones {
     left: 20px;
-    height: 600px;
+    height: 400px;
   }
   #section2 {
     padding-top: 20px;
@@ -913,7 +912,7 @@ footer a.btn-style:hover {
   #section2 .phones {
     right: 20px;
     top: 0px;
-    height: 585px;
+    height: 400px;
   }
   #section3 {
     padding-top: 20px;
@@ -958,28 +957,38 @@ footer a.btn-style:hover {
   }
   header .intro-text h1.heading {
     color: #ff3d00;
-    font-size: 48px;
+    font-size: 32px;
     text-shadow: none;
   }
   header .intro-text h2.sub-heading {
     color: #363636;
-    font-size: 23px;
+    font-size: 18px;
     text-shadow: none;
   }
   header .intro-text img.phones {
     top: 50px;
-    height: 480px;
+    height: 400px;
     position: relative;
     margin: 0 auto;
     display: block;
   }
+  header .intro-text img.mobile-store {
+    height: 36px;
+  }
+  section .col-sm-6.content,
+  section .col-sm-6.img-screen {
+    width: 100% !important;
+  }
   section p.desc {
-    font-size: 23px;
+    font-size: 18px;
+  }
+  section h2.section-heading {
+    font-size: 32px;
   }
   #section1 {
     margin-top: -50px;
-    padding-top: 40px;
-    padding-bottom: 600px;
+    padding-top: 32px;
+    padding-bottom: 500px;
     background: #ffffff;
     /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
@@ -1004,12 +1013,11 @@ footer a.btn-style:hover {
     width: 100%;
   }
   #section1 img.phones {
-    top: 440px;
-    height: 675px;
+    top: 402px;
     left: 110px;
   }
   #section1 ul li {
-    font-size: 23px;
+    font-size: 18px;
   }
   #section2 {
     padding-bottom: 0px;
@@ -1038,7 +1046,7 @@ footer a.btn-style:hover {
   #section2 img.phones {
     display: block;
     position: relative;
-    margin: 100px auto 0;
+    margin: 60px auto 0;
     right: 0;
   }
   #section2 a.btn-style {
@@ -1051,9 +1059,9 @@ footer a.btn-style:hover {
     border-radius: 50px;
   }
   #section3 {
-    margin-top: -50px;
+    margin-top: 0px;
     padding-top: 40px;
-    padding-bottom: 600px;
+    padding-bottom: 388px;
     background: #ffffff;
     /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
@@ -1070,6 +1078,15 @@ footer a.btn-style:hover {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
     /* IE6-9 */
+  }
+  #section3:before {
+    top: -62px;
+    height: 155px;
+    background: #fff;
+  }
+  #section3 img.phones {
+    top: 250px;
+    left: 110px;
   }
 }
 /* Custom, iPhone Retina */
