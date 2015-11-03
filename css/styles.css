@@ -592,6 +592,15 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+p.help-block {
+  color: #d22929;
+  text-align: left;
+  margin-bottom: 15px;
+}
+p.help-block ul {
+  list-style: none;
+  padding-left: 0;
+}
 #section1 {
   padding-top: 20px;
   padding-bottom: 200px;
@@ -907,9 +916,16 @@ footer a.btn-style:hover {
   }
   .navbar-default {
     background-color: #fff;
+    padding-bottom: 0;
+  }
+  .navbar-default .navbar-header {
+    margin-bottom: 5px;
   }
   .navbar-default .navbar-brand img {
     height: 50px;
+  }
+  .navbar-default .nav {
+    margin-bottom: 0;
   }
   .navbar-default .nav li a.btn-style {
     background-color: transparent !important;
