@@ -175,6 +175,9 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-toggle:focus {
   background-color: #ff501a;
 }
+.navbar-default .nav.navbar-right {
+  padding-top: 5px;
+}
 .navbar-default .nav li a {
   font-family: "Source Sans Pro", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -185,13 +188,16 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a.btn-style {
   border-radius: 20px;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   padding: 7px 0px;
   -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
   text-transform: none;
   width: 175px;
   text-align: center;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 .navbar-default .nav li a.btn-style:first-child {
   margin-right: 15px;
@@ -200,9 +206,17 @@ fieldset[disabled] .btn-xl.active {
   background-color: #ff3d00;
   color: white;
 }
+.navbar-default .nav li a.btn-style.orange:hover {
+  background-color: #ff501a;
+  text-decoration: none;
+}
 .navbar-default .nav li a.btn-style.white {
   background-color: white;
   color: #ff3d00;
+}
+.navbar-default .nav li a.btn-style.white:hover {
+  background-color: #fafafa;
+  text-decoration: none;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
@@ -251,8 +265,37 @@ fieldset[disabled] .btn-xl.active {
 }
 #pl-info-request .modal-body {
   background-color: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 20px;
+}
+#pl-info-request .modal-body h2 {
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: none;
+}
+#pl-info-request .modal-body p.desc {
+  font-size: 23px;
+  font-weight: 300;
+}
+#pl-info-request .modal-body .btn-style {
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 7px 50px;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
+  border: none;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+#pl-info-request .modal-body .btn-style.orange {
+  background-color: #ff3d00;
+  color: white;
+}
+#pl-info-request .modal-body .btn-style.orange:hover {
+  background-color: #ff501a;
+  text-decoration: none;
 }
 header {
   background-image: url('../img/hero-wave.jpg');
@@ -307,6 +350,9 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
+header .intro-text img.mobile-store {
+  height: 60px;
+}
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 200px;
@@ -359,14 +405,21 @@ section p.desc {
 section a.btn-style {
   border-radius: 20px;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   padding: 7px 50px;
   -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 section a.btn-style.orange {
   background-color: #ff3d00;
   color: white;
+}
+section a.btn-style.orange:hover {
+  background-color: #ff501a;
+  text-decoration: none;
 }
 section ul {
   padding-left: 0;
@@ -493,7 +546,7 @@ footer ul.quicklinks {
   opacity: 0.3;
 }
 .station-modal .close-modal .lr {
-  height: 75px;
+  height: 25px;
   width: 1px;
   margin-left: 35px;
   background-color: #222222;
@@ -505,7 +558,7 @@ footer ul.quicklinks {
   z-index: 1051;
 }
 .station-modal .close-modal .lr .rl {
-  height: 75px;
+  height: 25px;
   width: 1px;
   background-color: #222222;
   transform: rotate(90deg);
@@ -622,7 +675,7 @@ body {
   display: block;
 }
 #section2 {
-  padding-top: 70px;
+  padding-top: 20px;
   padding-bottom: 200px;
   position: relative;
   margin-bottom: 20px;
@@ -638,13 +691,20 @@ body {
 }
 #section2 .phones {
   right: 20%;
-  top: -50px;
+  top: 0px;
 }
 #section2 p.desc {
   margin-bottom: 20px;
 }
 #section2 a.btn-style {
   margin-top: 25px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+#section2 a.btn-style:hover {
+  background-color: #ff501a;
+  text-decoration: none;
 }
 #section2:before {
   content: '';
@@ -717,6 +777,17 @@ body {
 }
 footer {
   padding: 45px 0 75px;
+  position: relative;
+}
+footer:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -20px;
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  z-index: 3;
 }
 footer p.copyright {
   font-size: 18px;
@@ -756,10 +827,15 @@ footer a.btn-style.orange {
 }
 footer a.btn-style.orange:hover {
   background-color: #ff501a;
+  text-decoration: none;
 }
 footer a.btn-style.white {
   background-color: white;
   color: #ff3d00;
+}
+footer a.btn-style.white:hover {
+  background-color: #fafafa;
+  text-decoration: none;
 }
 footer a.btn-style:hover {
   text-decoration: none;
@@ -793,6 +869,12 @@ footer a.btn-style:hover {
     top: -62px;
     height: 155px;
   }
+  #section1 .col-sm-6.content {
+    width: 66.66666667%;
+  }
+  #section1 .col-sm-6.img-screen {
+    width: 33.33333333%;
+  }
   #section1 .section-heading {
     width: 60%;
   }
@@ -801,7 +883,7 @@ footer a.btn-style:hover {
     margin: 5px 10px;
   }
   #section1 .phones {
-    left: 60px;
+    left: 20px;
     height: 600px;
   }
   #section2 {
@@ -822,9 +904,30 @@ footer a.btn-style:hover {
   #section2::before {
     top: -75px;
   }
-  #section2 .phoens {
-    height: 600px;
+  #section2 .col-sm-6.content {
+    width: 66.66666667%;
+  }
+  #section2 .col-sm-6.img-screen {
+    width: 33.33333333%;
+  }
+  #section2 .phones {
+    right: 20px;
+    top: 0px;
+    height: 585px;
+  }
+  #section3 {
+    padding-top: 20px;
+  }
+  #section3 .col-sm-6.content {
+    width: 66.66666667%;
+  }
+  #section3 .col-sm-6.img-screen {
+    width: 33.33333333%;
+  }
+  #section3 .phones {
+    left: 20px;
     top: 0;
+    height: 400px;
   }
 }
 /* Extra Small Devices, Phones */
