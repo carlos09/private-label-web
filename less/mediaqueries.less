@@ -1,135 +1,104 @@
-/*==========  Non-Mobile First Method  ==========*/
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
 
-   /* Large Devices, Wide Screens */
-   @media only screen and (max-width : 1200px) {
-     header .phones {
-       height: 580px;
-     }
+    /*==========  Non-Mobile First Method  ==========*/
 
-     section  {
-       h2.section-heading {
-         font-size: 38px;
-       }
-     }
-   }
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+      header {
+        .intro-text {
+          padding: 125px 0;
 
-   /* Medium Devices, Desktops */
-   @media only screen and (max-width : 992px) {
-     header .intro-text  {
-       h1.heading {
-         font-size: 46px;
-       }
+          .phones {
+            height: 400px;
+            top: 68px;
+          }
 
-       .phones {
-         height: 420px;
-       }
-     }
+          img.mobile-store {
+            height: 40px;
+          }
+        }
+      }
 
-     section h2.section-heading {
-       font-size: 40px;
-     }
+      #section1 {
+        .phones {
+          top: -12px;
+        }
+      }
 
-     #section1 {
-       padding-top: 20px;
-       padding-bottom: 175px;
+      #section2 {
+        padding-bottom: 160px;
+      }
 
-       &:before {
-         top: -62px;
-         height: 155px;
-       }
+      footer {
+        &:before {
+          height: 63px;
+        }
+      }
+    }
 
-       .col-sm-6 {
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      section {
+        .col-sm-6 {
+          &.content {
+            width: 66.66666667%;
+          }
 
-         &.content {
-           width: 66.66666667%;
-         }
+          &.img-screen {
+            width: 33.33333333%;
+          }
+        }
 
-         &.img-screen {
-           width: 33.33333333%;
-         }
-       }
+        .phones {
+          left: 0 !important;
+          max-width: 100%;
+        }
 
-       .section-heading {
-         width: 60%;
-       }
+        &#section1 {
+          padding-top: 0;
+          padding-bottom: 150px;
 
-       ul.icon-list li div.icon {
-         padding: 0;
-         margin: 5px 10px;
-       }
+          .phones {
+            top: 5px;
+          }
+        }
 
-       .phones {
-         left: 20px;
-         height: 400px;
-       }
-     }
+        &#section2 {
+          padding-top: 0;
+          padding-bottom: 125px;
 
-     #section2 {
-       padding-top: 20px;
-       padding-bottom: 175px;
-     }
-   }
+          .phones {
+            right: 0;
+            top: 25px;
+          }
+        }
+      }
+    }
 
-   /* Small Devices, Tablets */
-   @media only screen and (max-width : 768px) {
-     .navbar-default .navbar-brand img {
-       height: 50px;
-     }
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      .navbar-default .navbar-brand img {
+        height: 50px;
+      }
+      header .intro-text {
 
-     #section2 {
-       padding-top: 20px;
-       padding-bottom: 175px;
-       margin-top: -43px;
+        h1.heading {
+          font-size: 34px;
+        }
 
-       &::before {
-         top: -75px;
+        .phones {
+          height: 300px;
+          top: 178px;
+        }
+      }
+    }
 
-       }
-
-       .col-sm-6 {
-
-         &.content {
-           width: 66.66666667%;
-         }
-
-         &.img-screen {
-           width: 33.33333333%;
-         }
-       }
-
-       .phones {
-         right: 20px;
-         top: 0px;
-         height: 400px;
-       }
-     }
-
-     #section3 {
-       padding-top: 20px;
-
-       .col-sm-6 {
-
-         &.content {
-           width: 66.66666667%;
-         }
-
-         &.img-screen {
-           width: 33.33333333%;
-         }
-       }
-
-       .phones {
-         left: 20px;
-          top: 0;
-          height: 400px;
-       }
-     }
-   }
-
-   /* Extra Small Devices, Phones */
-   @media only screen and (max-width : 480px) {
-     header {
-       background-image: none;
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      header {
+        background-image: none;
        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
         background: rgb(255,255,255); /* Old browsers */
         background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
@@ -140,142 +109,492 @@
         background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
 
-       .intro-text{
-         padding-top: 100px;
-         padding-bottom: 50px;
 
-         h1.heading {
-           color: @st-orange;
-           font-size: 32px;
-           text-shadow: none;
-         }
+        .intro-text {
+          padding: 100px 0;
 
-         h2.sub-heading {
-           color: @st-dark-text;
-           font-size: 18px;
-           text-shadow: none;
-         }
+          h1.heading {
+            color: @st-orange;
+            text-shadow: none;
+            font-size: 32px;
+          }
 
-         img.phones {
-           top: 50px;
-           height: 400px;
+          h2.sub-heading {
+            color: @st-dark-text;
+            text-shadow: none;
+          }
+
+          .phones {
             position: relative;
+            top: 25px;
             margin: 0 auto;
             display: block;
-         }
+          }
+        }
+      }
 
-         img.mobile-store {
-           height: 36px;
-         }
-       }
-     }
+      section {
+        .col-sm-6 {
+          &.content {
+            width: 100%;
+          }
 
-     section {
-       .col-sm-6.content,
-       .col-sm-6.img-screen {
-         width: 100% !important;
-       }
-       p.desc {
-         font-size: 18px;
+          &.img-screen {
+            width: 100%;
+          }
+
+          h2.section-heading {
+            font-size: 34px;
+          }
         }
 
-      h2.section-heading {
-        font-size: 32px;
+        &#section1 {
+          padding-bottom: 100px;
+          background-image: none;
+         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
+          background: rgb(255,255,255); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+          background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+          &:before {
+            background: #fff;
+            height: 125px;
+          }
+
+          .col-sm-6 {
+            &.content {
+              position: relative;
+              top: -400px;
+            }
+
+            &.img-screen {
+
+            }
+          }
+
+          ul.icon-list li div.icon {
+            margin: 5px;
+            padding: 0;
+          }
+
+          .phones {
+            position: relative;
+            top: 440px;
+            margin: 0 auto;
+            display: block;
+            height: 400px;
+          }
+        }
+
+        &#section2 {
+          padding-bottom: 25px;
+          background-image: none;
+         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
+          background: rgb(255,255,255); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+          background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+          .phones {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+
+        &#section3 {
+          padding-top:0;
+          padding-bottom: 0px;
+          background-image: none;
+         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
+          background: rgb(255,255,255); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+          background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+          &:before {
+            background: #fff;
+            height: 125px;
+          }
+
+          .col-sm-6 {
+            &.content {
+              position: relative;
+              top: -400px;
+            }
+
+            &.img-screen {
+
+            }
+          }
+
+          .phones {
+            position: relative;
+            top: 270px;
+            margin: 0 auto;
+            display: block;
+            height: 400px;
+          }
+        }
       }
-     }
 
-     #section1 {
-       margin-top: -50px;
-       padding-top: 32px;
-       padding-bottom: 500px;
-       background: rgb(255,255,255); /* Old browsers */
-       background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
-       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
-       background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
-       background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
-       background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
-       background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
-       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+      footer {
+        padding: 35px 0 55px;
+      }
+    }
 
-       &:before {
-         background: #fff
-       }
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
 
-       h2.section-heading {
-          width: 100%;
-       }
+    }
 
-       img.phones {
-         top: 402px;
-         left: 110px;
-       }
 
-       ul li {
-         font-size: 18px;
-       }
-     }
 
-     #section2 {
-       padding-bottom: 0px;
-       background: rgb(255,255,255); /* Old browsers */
-       background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
-       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
-       background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
-       background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
-       background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
-       background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
-       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
-
-       &:before {
-         top: -62px;
-         height: 155px;
-         background: #fff;
-       }
-
-       img.phones {
-         display: block;
-         position: relative;
-         margin: 60px auto 0;
-         right: 0;
-       }
-       a.btn-style {
-         margin-top: 25px;
-         width: 100%;
-         display: block;
-         text-align: center;
-         padding: 15px 0;
-         font-size: 30px;
-         border-radius: 50px;
-       }
-     }
-
-     #section3 {
-       margin-top: 0px;
-       padding-top: 40px;
-       padding-bottom: 388px;
-       background: rgb(255,255,255); /* Old browsers */
-       background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
-       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
-       background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
-       background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
-       background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
-       background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
-       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
-
-       &:before {
-         top: -62px;
-         height: 155px;
-         background: #fff;
-       }
-
-       img.phones {
-         top: 250px;
-         left: 110px;
-       }
-     }
-   }
-
-   /* Custom, iPhone Retina */
-   @media only screen and (max-width : 320px) {
-
-   }
+//
+//    /* Large Devices, Wide Screens */
+//    @media only screen and (max-width : 1200px) {
+//      header {
+//        .phones {
+//          height: 433px;
+//         top: 120px;
+//         right: -20px;
+//       }
+//
+//       .intro-text{
+//         img.mobile-store {
+//           height: 40px;
+//         }
+//       }
+//      }
+//
+//      section  {
+//        h2.section-heading {
+//          font-size: 38px;
+//        }
+//
+//        &#section2 .phones {
+//          top: 10px;
+//        }
+//      }
+//
+//
+//           footer {
+//             &:before {
+//               height: 71px;
+//             }
+//           }
+//    }
+//
+//    /* Medium Devices, Desktops */
+//    @media only screen and (max-width : 992px) {
+//      header .intro-text  {
+//        h1.heading {
+//          font-size: 46px;
+//        }
+//
+//        .phones {
+//          height: 420px;
+//        }
+//      }
+//
+//      section h2.section-heading {
+//        font-size: 40px;
+//      }
+//
+//      #section1 {
+//        padding-top: 20px;
+//        padding-bottom: 175px;
+//
+//        &:before {
+//          top: -62px;
+//          height: 155px;
+//        }
+//
+//        .col-sm-6 {
+//
+//          &.content {
+//            width: 66.66666667%;
+//          }
+//
+//          &.img-screen {
+//            width: 33.33333333%;
+//          }
+//        }
+//
+//        .section-heading {
+//          width: 60%;
+//        }
+//
+//        ul.icon-list li div.icon {
+//          padding: 0;
+//          margin: 5px 10px;
+//        }
+//
+//        .phones {
+//          left: 20px;
+//          height: 400px;
+//        }
+//      }
+//
+//      #section2 {
+//        padding-top: 20px;
+//        padding-bottom: 175px;
+//      }
+//    }
+//
+//    /* Small Devices, Tablets */
+//    @media only screen and (max-width : 768px) {
+//      .navbar-default .navbar-brand img {
+//        height: 50px;
+//      }
+//
+//      #section2 {
+//        padding-top: 20px;
+//        padding-bottom: 175px;
+//        margin-top: -43px;
+//
+//        &::before {
+//          top: -75px;
+//
+//        }
+//
+//        .col-sm-6 {
+//
+//          &.content {
+//            width: 50%;
+//          }
+//
+//          &.img-screen {
+//            width: 50%;
+//          }
+//        }
+//
+//        .phones {
+//          right: 20px;
+//          top: 0px;
+//          height: 400px;
+//        }
+//      }
+//
+//      #section3 {
+//        padding-top: 20px;
+//
+//        .col-sm-6 {
+//
+//          &.content {
+//            width: 66.66666667%;
+//          }
+//
+//          &.img-screen {
+//            width: 33.33333333%;
+//          }
+//        }
+//
+//        .phones {
+//          left: 20px;
+//           top: 0;
+//           height: 400px;
+//        }
+//      }
+//    }
+//
+//    /* Extra Small Devices, Phones */
+//    @media only screen and (max-width : 480px) {
+//      header {
+//        background-image: none;
+//        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
+//         background: rgb(255,255,255); /* Old browsers */
+//         background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+//         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+//         background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+//         background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+//         background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+//         background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+//         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+//
+//        .intro-text{
+//          padding-top: 65px;
+//          padding-bottom: 50px;
+//
+//          h1.heading {
+//            color: @st-orange;
+//            font-size: 32px;
+//            text-shadow: none;
+//          }
+//
+//          h2.sub-heading {
+//            color: @st-dark-text;
+//            font-size: 18px;
+//            text-shadow: none;
+//          }
+//
+//          img.phones {
+//            top: 50px;
+//            height: auto;
+//            max-width: 100%;
+//             position: relative;
+//             margin: 0 auto;
+//             display: block;
+//             right: 0;
+//          }
+//
+//          img.mobile-store {
+//            height: 36px;
+//          }
+//        }
+//      }
+//
+//      section {
+//        .col-sm-6.content,
+//        .col-sm-6.img-screen {
+//          width: 100% !important;
+//        }
+//        p.desc {
+//          font-size: 18px;
+//         }
+//
+//       h2.section-heading {
+//         font-size: 32px;
+//       }
+//      }
+//
+//      #section1 {
+//        margin-top: -50px;
+//        padding-top: 32px;
+//        padding-bottom: 100px;
+//        background: rgb(255,255,255); /* Old browsers */
+//        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+//        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+//        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+//        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+//        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+//        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+//
+//        &:before {
+//          background: #fff
+//        }
+//
+//        h2.section-heading {
+//           width: 100%;
+//        }
+//
+//        .col-sm-6 {
+//          &.content {
+//            position: relative;
+//            top: -400px;
+//          }
+//          &.img-screen {
+//            display: block;
+//             margin: 0 auto;
+//             position: relative;
+//             top: 450px;
+//
+//             .phones {
+//               left: 0;
+//               height: 400px;
+//               position: relative;
+//               margin: 0 auto;
+//               display: block;
+//             }
+//          }
+//         }
+//
+//        ul li {
+//          font-size: 18px;
+//        }
+//      }
+//
+//      #section2 {
+//        padding-bottom: 0px;
+//        background: rgb(255,255,255); /* Old browsers */
+//        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+//        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+//        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+//        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+//        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+//        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+//
+//        &:before {
+//          top: -62px;
+//          height: 155px;
+//          background: #fff;
+//        }
+//
+//        img.phones {
+//          display: block;
+//          position: relative;
+//          margin: 60px auto 0;
+//          right: 0;
+//        }
+//        a.btn-style {
+//          margin-top: 25px;
+//          width: 100%;
+//          display: block;
+//          text-align: center;
+//          padding: 15px 0;
+//          font-size: 30px;
+//          border-radius: 50px;
+//        }
+//      }
+//
+//      #section3 {
+//        margin-top: 0px;
+//        padding-top: 20px;
+//        padding-bottom: 10px;
+//        background: rgb(255,255,255); /* Old browsers */
+//        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 60%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+//        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(246,246,246,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+//        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+//        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+//        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* IE10+ */
+//        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 60%,rgba(221,221,221,1) 100%); /* W3C */
+//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+//
+//        &:before {
+//          top: -62px;
+//          height: 155px;
+//          background: #fff;
+//        }
+//
+//        .col-sm-6 {
+//          &.content {
+//            position: relative;
+//            top: -400px;
+//          }
+//          &.img-screen {
+//            display: block;
+//             margin: 0 auto;
+//             position: relative;
+//             top: 300px;
+//
+//             .phones {
+//               left: 0;
+//               height: 400px;
+//               position: relative;
+//               margin: 0 auto;
+//               display: block;
+//             }
+//          }
+//         }
+//      }
+//    }
+//
+//    /* Custom, iPhone Retina */
+//    @media only screen and (max-width : 320px) {
+//
+//    }
