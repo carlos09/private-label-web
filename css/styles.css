@@ -593,7 +593,7 @@ body {
   webkit-tap-highlight-color: #fed136;
 }
 #section1 {
-  padding-top: 70px;
+  padding-top: 20px;
   padding-bottom: 200px;
   position: relative;
   margin-bottom: 20px;
@@ -729,7 +729,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=1);
 }
 #section3 {
-  padding-top: 70px;
+  padding-top: 20px;
   position: relative;
   margin-bottom: 20px;
   z-index: 3;
@@ -746,7 +746,6 @@ body {
 #section3 .phones {
   left: 25%;
   top: -20px;
-  height: 433px;
 }
 #section3 p.desc {
   margin-bottom: 40px;
@@ -839,55 +838,58 @@ footer a.btn-style.white:hover {
 footer a.btn-style:hover {
   text-decoration: none;
 }
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  header .phones {
-    height: 580px;
+  header .intro-text {
+    padding: 125px 0;
   }
-  section h2.section-heading {
-    font-size: 38px;
+  header .intro-text .phones {
+    height: 400px;
+    top: 68px;
+  }
+  header .intro-text img.mobile-store {
+    height: 40px;
+  }
+  #section1 .phones {
+    top: -12px;
+  }
+  #section2 {
+    padding-bottom: 160px;
+  }
+  footer:before {
+    height: 63px;
   }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  header .intro-text h1.heading {
-    font-size: 46px;
-  }
-  header .intro-text .phones {
-    height: 420px;
-  }
-  section h2.section-heading {
-    font-size: 40px;
-  }
-  #section1 {
-    padding-top: 20px;
-    padding-bottom: 175px;
-  }
-  #section1:before {
-    top: -62px;
-    height: 155px;
-  }
-  #section1 .col-sm-6.content {
+  section .col-sm-6.content {
     width: 66.66666667%;
   }
-  #section1 .col-sm-6.img-screen {
+  section .col-sm-6.img-screen {
     width: 33.33333333%;
   }
-  #section1 .section-heading {
-    width: 60%;
+  section .phones {
+    left: 0 !important;
+    max-width: 100%;
   }
-  #section1 ul.icon-list li div.icon {
-    padding: 0;
-    margin: 5px 10px;
+  section#section1 {
+    padding-top: 0;
+    padding-bottom: 150px;
   }
-  #section1 .phones {
-    left: 20px;
-    height: 400px;
+  section#section1 .phones {
+    top: 5px;
   }
-  #section2 {
-    padding-top: 20px;
-    padding-bottom: 175px;
+  section#section2 {
+    padding-top: 0;
+    padding-bottom: 125px;
+  }
+  section#section2 .phones {
+    right: 0;
+    top: 25px;
   }
 }
 /* Small Devices, Tablets */
@@ -895,38 +897,12 @@ footer a.btn-style:hover {
   .navbar-default .navbar-brand img {
     height: 50px;
   }
-  #section2 {
-    padding-top: 20px;
-    padding-bottom: 175px;
-    margin-top: -43px;
+  header .intro-text h1.heading {
+    font-size: 34px;
   }
-  #section2::before {
-    top: -75px;
-  }
-  #section2 .col-sm-6.content {
-    width: 66.66666667%;
-  }
-  #section2 .col-sm-6.img-screen {
-    width: 33.33333333%;
-  }
-  #section2 .phones {
-    right: 20px;
-    top: 0px;
-    height: 400px;
-  }
-  #section3 {
-    padding-top: 20px;
-  }
-  #section3 .col-sm-6.content {
-    width: 66.66666667%;
-  }
-  #section3 .col-sm-6.img-screen {
-    width: 33.33333333%;
-  }
-  #section3 .phones {
-    left: 20px;
-    top: 0;
-    height: 400px;
+  header .intro-text .phones {
+    height: 300px;
+    top: 178px;
   }
 }
 /* Extra Small Devices, Phones */
@@ -952,75 +928,36 @@ footer a.btn-style:hover {
     /* IE6-9 */
   }
   header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding: 100px 0;
   }
   header .intro-text h1.heading {
     color: #ff3d00;
-    font-size: 32px;
     text-shadow: none;
+    font-size: 32px;
   }
   header .intro-text h2.sub-heading {
     color: #363636;
-    font-size: 18px;
     text-shadow: none;
   }
-  header .intro-text img.phones {
-    top: 50px;
-    height: 400px;
+  header .intro-text .phones {
     position: relative;
+    top: 25px;
     margin: 0 auto;
     display: block;
   }
-  header .intro-text img.mobile-store {
-    height: 36px;
+  section .col-sm-6.content {
+    width: 100%;
   }
-  section .col-sm-6.content,
   section .col-sm-6.img-screen {
-    width: 100% !important;
-  }
-  section p.desc {
-    font-size: 18px;
-  }
-  section h2.section-heading {
-    font-size: 32px;
-  }
-  #section1 {
-    margin-top: -50px;
-    padding-top: 32px;
-    padding-bottom: 500px;
-    background: #ffffff;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(60%, #f6f6f6), color-stop(100%, #dddddd));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
-    /* IE6-9 */
-  }
-  #section1:before {
-    background: #ffffff;
-  }
-  #section1 h2.section-heading {
     width: 100%;
   }
-  #section1 img.phones {
-    top: 402px;
-    left: 110px;
+  section .col-sm-6 h2.section-heading {
+    font-size: 34px;
   }
-  #section1 ul li {
-    font-size: 18px;
-  }
-  #section2 {
-    padding-bottom: 0px;
+  section#section1 {
+    padding-bottom: 100px;
+    background-image: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
     background: #ffffff;
     /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
@@ -1038,30 +975,29 @@ footer a.btn-style:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
     /* IE6-9 */
   }
-  #section2:before {
-    top: -62px;
-    height: 155px;
+  section#section1:before {
     background: #fff;
+    height: 125px;
   }
-  #section2 img.phones {
-    display: block;
+  section#section1 .col-sm-6.content {
     position: relative;
-    margin: 60px auto 0;
-    right: 0;
+    top: -400px;
   }
-  #section2 a.btn-style {
-    margin-top: 25px;
-    width: 100%;
+  section#section1 ul.icon-list li div.icon {
+    margin: 5px;
+    padding: 0;
+  }
+  section#section1 .phones {
+    position: relative;
+    top: 440px;
+    margin: 0 auto;
     display: block;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 30px;
-    border-radius: 50px;
+    height: 400px;
   }
-  #section3 {
-    margin-top: 0px;
-    padding-top: 40px;
-    padding-bottom: 388px;
+  section#section2 {
+    padding-bottom: 25px;
+    background-image: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
     background: #ffffff;
     /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
@@ -1079,14 +1015,50 @@ footer a.btn-style:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
     /* IE6-9 */
   }
-  #section3:before {
-    top: -62px;
-    height: 155px;
-    background: #fff;
+  section#section2 .phones {
+    position: relative;
+    display: block;
+    margin: 0 auto;
   }
-  #section3 img.phones {
-    top: 250px;
-    left: 110px;
+  section#section3 {
+    padding-top: 0;
+    padding-bottom: 0px;
+    background-image: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(60%, #f6f6f6), color-stop(100%, #dddddd));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 60%, #dddddd 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
+    /* IE6-9 */
+  }
+  section#section3:before {
+    background: #fff;
+    height: 125px;
+  }
+  section#section3 .col-sm-6.content {
+    position: relative;
+    top: -400px;
+  }
+  section#section3 .phones {
+    position: relative;
+    top: 270px;
+    margin: 0 auto;
+    display: block;
+    height: 400px;
+  }
+  footer {
+    padding: 35px 0 55px;
   }
 }
 /* Custom, iPhone Retina */
