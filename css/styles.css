@@ -842,6 +842,14 @@ footer a.btn-style:hover {
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 /*==========  Non-Mobile First Method  ==========*/
+@media screen only screen and (min-width: 1200px) {
+  footer {
+    padding: 70px 0 75px;
+  }
+  footer:before {
+    height: 94px;
+  }
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   header .intro-text {
@@ -928,7 +936,7 @@ footer a.btn-style:hover {
     /* IE6-9 */
   }
   header .intro-text {
-    padding: 100px 0;
+    padding: 80px 0 100px;
   }
   header .intro-text h1.heading {
     color: #ff3d00;
@@ -1019,10 +1027,12 @@ footer a.btn-style:hover {
     position: relative;
     display: block;
     margin: 0 auto;
+    max-width: 70%;
   }
   section#section3 {
     padding-top: 0;
     padding-bottom: 0px;
+    margin-bottom: 0;
     background-image: none;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+40,dddddd+100 */
     background: #ffffff;
@@ -1059,6 +1069,38 @@ footer a.btn-style:hover {
   }
   footer {
     padding: 35px 0 55px;
+  }
+}
+@media only screen and (max-width: 335px) {
+  section h2.section-heading {
+    font-size: 30px !important;
+  }
+  section#section1 {
+    padding-bottom: 60px;
+  }
+  section#section1 ul.icon-list li {
+    display: block;
+  }
+  section#section1 ul.icon-list li:first-child .icon {
+    margin-left: 5px;
+  }
+  section#section1 ul.icon-list li .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  section#section1 ul.icon-list li span.title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+  }
+  section#section1 .phones {
+    top: 610px;
+  }
+  section#section2 .phones {
+    max-width: 80%;
+  }
+  section#section3 .phones {
+    top: 345px;
   }
 }
 /* Custom, iPhone Retina */
