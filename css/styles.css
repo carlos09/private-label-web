@@ -311,9 +311,9 @@ header {
   color: white;
 }
 header .phones {
-  height: 650px;
+  height: 470px;
   right: 0;
-  top: -50px;
+  top: 10px;
 }
 header .intro-text {
   padding-top: 100px;
@@ -574,7 +574,6 @@ footer ul.quicklinks {
 }
 .phones {
   position: absolute;
-  height: 650px;
 }
 ::-moz-selection {
   text-shadow: none;
@@ -958,27 +957,37 @@ footer a.btn-style:hover {
   }
   header .intro-text h1.heading {
     color: #ff3d00;
-    font-size: 48px;
+    font-size: 32px;
     text-shadow: none;
   }
   header .intro-text h2.sub-heading {
     color: #363636;
-    font-size: 23px;
+    font-size: 18px;
     text-shadow: none;
   }
   header .intro-text img.phones {
     top: 50px;
-    height: 480px;
+    height: 400px;
     position: relative;
     margin: 0 auto;
     display: block;
   }
+  header .intro-text img.mobile-store {
+    height: 36px;
+  }
+  section .col-sm-6.content,
+  section .col-sm-6.img-screen {
+    width: 100% !important;
+  }
   section p.desc {
-    font-size: 23px;
+    font-size: 18px;
+  }
+  section h2.section-heading {
+    font-size: 32px;
   }
   #section1 {
     margin-top: -50px;
-    padding-top: 40px;
+    padding-top: 32px;
     padding-bottom: 600px;
     background: #ffffff;
     /* Old browsers */
@@ -1009,7 +1018,7 @@ footer a.btn-style:hover {
     left: 110px;
   }
   #section1 ul li {
-    font-size: 23px;
+    font-size: 18px;
   }
   #section2 {
     padding-bottom: 0px;
