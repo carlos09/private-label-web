@@ -851,12 +851,15 @@ footer a.btn-style:hover {
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 /*==========  Non-Mobile First Method  ==========*/
-@media screen only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
+  #section3 .phones {
+    top: -20px;
+  }
   footer {
     padding: 70px 0 75px;
   }
   footer:before {
-    height: 94px;
+    height: 95px;
   }
 }
 /* Large Devices, Wide Screens */
@@ -878,7 +881,7 @@ footer a.btn-style:hover {
     padding-bottom: 160px;
   }
   footer:before {
-    height: 63px;
+    height: 72px;
   }
 }
 /* Medium Devices, Desktops */
