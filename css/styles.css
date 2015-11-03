@@ -940,6 +940,10 @@ footer a.btn-style:hover {
     width: auto;
     padding: 10px 0;
   }
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/hero-wave.jpg');
+    background-size: cover;
+  }
   header .intro-text h1.heading {
     font-size: 34px;
   }
