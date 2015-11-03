@@ -902,8 +902,23 @@ footer a.btn-style:hover {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .navbar-default .navbar-brand img {
+  nav {
+    padding-bottom: 0;
+  }
+  nav .navbar-default {
+    background-color: #fff;
+  }
+  nav .navbar-default .navbar-brand img {
     height: 50px;
+  }
+  nav .navbar-default .nav li a.btn-style {
+    background-color: transparent !important;
+    color: #ff3d00 !important;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #e7e7e7;
+    width: auto;
+    padding: 10px 0;
   }
   header .intro-text h1.heading {
     font-size: 34px;
