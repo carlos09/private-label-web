@@ -885,7 +885,7 @@ footer a.btn-style:hover {
 @media only screen and (max-width: 992px) {
   header .intro-text .phones {
     height: 300px;
-    top: 280px;
+    top: 250px;
   }
   section .col-sm-6.content {
     width: 66.66666667%;
@@ -945,7 +945,7 @@ footer a.btn-style:hover {
   }
   header .intro-text .phones {
     height: 300px;
-    top: 225px;
+    top: 195px;
   }
   section h2.section-heading {
     font-size: 38px;
