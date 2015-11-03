@@ -1,5 +1,17 @@
 footer {
   padding: 45px 0 75px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    z-index: 3;
+  }
 
   p.copyright{
     font-size: 18px;
@@ -43,13 +55,19 @@ footer {
         color: white;
 
         &:hover {
-          background-color: lighten(@st-orange, 5%);
-        }
+					background-color: lighten(@st-orange, 5%);
+					text-decoration: none;
+				}
       }
 
       &.white {
         background-color: white;
         color: @st-orange;
+
+        &:hover {
+					background-color: darken(#fff, 2%);
+					text-decoration: none;
+				}
       }
 
       &:hover {

@@ -1,5 +1,5 @@
 &#section2 {
-  padding-top: 70px;
+  padding-top: 20px;
   padding-bottom: 200px;
   position: relative;
   margin-bottom: 20px;
@@ -15,15 +15,25 @@
 
   .phones {
     right: 20%;
-    top: -50px;
+    top: 0px;
   }
 
-  p.desc {
-    margin-bottom: 20px;
+  p {
+    &.desc {
+      margin-bottom: 20px;
+    }
   }
 
   a.btn-style {
     margin-top: 25px;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    transition: all 0.25s;
+
+    &:hover {
+      background-color: lighten(@st-orange, 5%);
+      text-decoration: none;
+    }
   }
 
   &:before {
@@ -49,4 +59,5 @@
     background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(255,255,255,1) 11%, rgba(246,246,246,1) 90%, rgba(240,240,240,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=1 );
   }
+  
 }
