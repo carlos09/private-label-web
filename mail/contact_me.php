@@ -12,7 +12,7 @@ if(empty($_POST['name'])  		||
 
 $name = $_POST['name'];
 $email_address = $_POST['email'];
-$copmany = $_POST['company'];
+$company = $_POST['company'];
 $message = $_POST['message'];
 
 // Create the email and send the message
